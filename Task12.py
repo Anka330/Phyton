@@ -12,8 +12,12 @@
 
 x = int(input('Введите число x: '))
 y = int(input('Введите число y: '))
+flag = True
+
 
 for i in range(x):
     for j in range(y):
         if i + j == x and i * j == y:
-            print(i,j)
+            if flag:
+                print(i,j)
+                flag = False
